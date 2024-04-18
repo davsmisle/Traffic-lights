@@ -8,7 +8,7 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
+    
     
     @IBOutlet var lightView: [UIView]!
     
@@ -26,7 +26,9 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func startButtonChanging(_ sender: UIButton) {
-        sender.setTitle("Next", for: .normal)
+        if sender.currentTitle == "Start" {
+            sender.setTitle("Next", for: .normal)
+        }
         count += 1
     }
     
