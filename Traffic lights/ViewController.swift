@@ -17,7 +17,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         for light in lightView {
-            light.layer.cornerRadius = 50
+            light.layer.cornerRadius = light.frame.height / 2.5
         }
         
         for light in lightView {
